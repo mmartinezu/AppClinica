@@ -1,0 +1,71 @@
+<form fxLayout="column" [formGroup]="group" fxLayoutAlign="space-between">
+    
+    <h2>Datos personales</h2>
+    <form fxLayout fxLayoutAlign="space-between" fxLayoutGap="20px">
+    <mat-form-field appearance="outline" class="personal">
+        <mat-label>Nombres</mat-label>
+        <input type="text" 
+            matInput 
+            required 
+            placeholder="Ingrese su nombre" 
+            formControlName="nombre">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="personal">
+        <mat-label>Apellidos</mat-label>
+        <input type="text" 
+            matInput 
+            required 
+            placeholder="Ingrese su apellido" 
+            formControlName="apellido">
+    </mat-form-field>
+    </form>
+    <form fxLayout fxLayoutAlign="space-between" fxLayoutGap="20px">
+    <mat-form-field appearance="outline" class="personal">
+        <mat-label>Teléfono</mat-label>
+        <input type="text" 
+            matInput 
+            required 
+            placeholder="Teléfono de contacto" 
+            formControlName="telefono">
+        <mat-icon matSuffix>phone</mat-icon>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="personal">
+        <mat-label>Correo</mat-label>
+        <input type="text" 
+            matInput 
+            required 
+            placeholder="Ingrese su correo" 
+            formControlName="correo">
+        <mat-icon matSuffix>email</mat-icon>
+    </mat-form-field>
+    </form>
+
+    <h2>Sobre la cita</h2>
+    <mat-form-field class="cita" appearance="outline">
+        <mat-label>Fecha</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="fecha">
+        <mat-datepicker-toggle matSuffix [for]="picker">
+          <mat-icon matDatepickerToggleIcon>date_range</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="cita">
+        <mat-label>Motivo de la visita</mat-label>
+        <textarea matInput formControlName="motivo" 
+        cdkTextareaAutosize
+            cdkAutosizeMinRows="2"
+            cdkAutosizeMaxRows="2"></textarea>
+      </mat-form-field>
+
+    <re-captcha class="recaptcha"
+        formControlName="recaptchaReactive"
+        fxLayoutAlign="space-between"></re-captcha>
+    <button 
+        mat-raised-button
+        [disabled]="group.invalid"
+        (click)="save()"
+        class="save"
+        fxLayoutAlign="center"
+        >Registrar Cita</button>
+
+</form>

@@ -1,0 +1,22 @@
+
+.info{
+    padding-left: 100px
+}
+
+.info h1{
+    color: #093236;
+    font-size: 24px;
+    text-align: center;
+}
+
+.info h2{
+    color: #093236;
+    font-size: 36px;
+    text-align: center;
+}
+
+.info h3{
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+}

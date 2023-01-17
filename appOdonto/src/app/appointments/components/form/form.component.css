@@ -1,0 +1,26 @@
+:host{
+    width: 100%;
+    display: block;
+}
+
+h2{
+    text-align: left;
+}
+
+.recaptcha{
+    padding: 0px 0 10px;
+}
+
+.cita{
+    width: 420px;
+}
+
+.personal{
+    width: 200px;
+}
+
+.save{
+    width: 305px;
+    background-color: #188491;
+    color: #fbfbfb;
+}

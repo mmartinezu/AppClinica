@@ -1,0 +1,14 @@
+<app-title></app-title>
+<app-container>
+    <div fxLayout fxLayoutAlign="space-between">
+        <div fxLayout="column" fxFlex="50%" fxLayoutAlign="center center" class="info">
+            <h1>Visítanos</h1>
+            <h3>Calle La Niña, entre Av. Los Shyris y La Pinta</h3>
+        </div>
+        <div fxLayout fxFlex="50%" fxLayoutAlign="center">
+            <google-map class="map" [center]="position">
+                <map-marker [position]="position" [label]="label" [title]="title"></map-marker>
+            </google-map>
+        </div>
+    </div>
+</app-container>

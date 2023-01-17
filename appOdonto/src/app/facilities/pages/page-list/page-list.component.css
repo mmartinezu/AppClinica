@@ -1,0 +1,16 @@
+.map{
+    width: 800px;
+    height: 400px;
+    padding: 30px;
+}
+
+h1{
+    font-size: 40px;
+    color: #093236;   
+}
+
+h3{
+    font-size: 18px;
+    font-style: italic;
+    color: #093236;   
+}

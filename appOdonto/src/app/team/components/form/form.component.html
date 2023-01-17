@@ -1,0 +1,43 @@
+<mat-toolbar fxLayout fxLayoutAlign="space-between center">
+    <h3>Registro</h3>
+    <button mat-icon-button mat-dialog-close>
+        <mat-icon>close</mat-icon>
+    </button>
+</mat-toolbar>
+
+<mat-dialog-content>
+    <form fxLayout="column" [formGroup]="group">
+        <mat-form-field appearance="outline">
+            <mat-label>NOMBRE</mat-label>
+            <input type="text" matInput formControlName="name"  required>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>CMP</mat-label>
+            <input type="text" matInput formControlName="cmp" required>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>EDAD</mat-label>
+            <input type="text" matInput formControlName="age" >
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>TITULO</mat-label>
+            <input type="text" matInput formControlName="title"  required>
+        </mat-form-field> 
+        <mat-form-field appearance="outline">
+            <mat-label>UNIVERSIDAD</mat-label>
+            <input type="text" matInput formControlName="university"  required>
+        </mat-form-field> 
+        <mat-form-field appearance="outline">
+            <mat-label>ESPECIALIDAD</mat-label>
+            <input type="text" matInput formControlName="speciality"  required>
+        </mat-form-field> 
+        <div fxLayout fxLayoutAlign="end" fxLayoutGap="10px">
+            <button mat-raised-button color="primary" type="button" (click)="save()">
+                Guardar
+            </button>
+            <button mat-button type="button" color="primary" mat-dialog-close>
+                Cancelar
+            </button>
+        </div>
+    </form>
+</mat-dialog-content>

@@ -1,0 +1,31 @@
+.social {
+    height: 100%;
+}
+
+a, 
+a:link,
+a:visited,
+a:active {
+    color: white !important;
+    height: 100%;
+}
+
+mat-toolbar img{
+    width: 40px;
+    max-height: 40px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+
+mat-toolbar {
+    background-color: #093236;
+    border-bottom: 0px solid #ccdddf ;
+    color: white;
+    
+}
+
+mat-toolbar h3{
+    padding-right: 20px;
+    font-style: italic;
+    color: white;
+}

@@ -1,0 +1,21 @@
+.start{
+    padding: 20px;
+}
+
+.welcome {
+    padding: 200px;
+}
+
+.welcome h1{
+    font-size: 40px;
+}
+
+.welcome h2{
+    font-size: 36px;
+    padding: 10px;
+}
+
+.welcome h3{
+    font-size: 34px;
+    font-style: italic;
+}
